@@ -17,7 +17,6 @@ class CreateTransactionService {
   }
 
   public execute({ title, value, type }: RequestDTO): Transaction {
-    // TODO
     const transaction = this.transactionsRepository.create({
       title,
       value,
